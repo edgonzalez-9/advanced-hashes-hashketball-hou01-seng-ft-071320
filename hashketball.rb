@@ -198,10 +198,8 @@ def big_shoe_rebounds
  all_players.sort_by! do |player|
    player[:shoe]
  end
- player = all_players.length - 1 
- rebounds = all_players[player][:rebounds]
- rebounds
-  
+ player_index = all_players.length - 1 
+ all_players[player_index][:rebounds]
 end
 
 def most_points_scored
